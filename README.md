@@ -64,10 +64,7 @@ Example output:
 ## Usage
 
 1. Prepare the data file and parameter file as per the specified format.
-2. Run the MSApriori algorithm:
-   ```python
-   python msapriori.py data_file.txt parameter_file.txt
-   ```
+2. Run the MSApriori algorithm through the jupyter notebook: `MSApriori Final Version.ipynb`
 3. The output will be generated in a file named output.txt.
 
 ## Important Notes
@@ -75,10 +72,6 @@ Example output:
 - No additional symbols or punctuation marks are used in the output beyond what is specified.
 - The indentation in the output is not significant, but the round brackets must be placed correctly.
 
-## Future Improvements
-- Implement error handling for various input file formats
-- Optimize the algorithm for larger datasets
-- Add command-line options for customizing output file name and location
 
 ## References
 - R. Agrawal and R. Srikant. "Fast algorithms for mining association rules." In Proc. 1994 Int. Conf. Very Large Data Bases (VLDB'94), pages 487-499, Santiago, Chile, Sept. 1994.
