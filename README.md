@@ -7,8 +7,7 @@ Key concepts:
 - Support: Frequency of an itemset
 - Frequent itemset: Itemset with support above a threshold
 
-Example:
-
+Example:<br>
 Transaction database:
 - T1: {A, B, C}
 - T2: {B, C, D}
