@@ -1,5 +1,31 @@
 # MSApriori Algorithm Implementation
 
+The Apriori algorithm is a fundamental data mining technique for finding frequent itemsets in transaction databases. It works by identifying individual items that meet a minimum support threshold, then extends to larger itemsets, pruning those that don't meet the threshold.
+
+Key concepts:
+- Itemset: Collection of items
+- Support: Frequency of an itemset
+- Frequent itemset: Itemset with support above a threshold
+
+Example:
+
+Transaction database:
+- T1: {A, B, C}
+- T2: {B, C, D}
+- T3: {A, C, D}
+- T4: {B, C, D}
+
+Minimum support: 50% (2 transactions)
+
+Process:
+
+- Find frequent 1-itemsets: {A}, {B}, {C}, {D}
+- Generate 2-itemsets: {A,B}, {A,C}, {A,D}, {B,C}, {B,D}, {C,D}
+- Prune infrequent: {A,B}
+- Continue until no more frequent itemsets found
+
+Result: Frequent itemsets {A}, {B}, {C}, {D}, {B,C}, {B,D}, {C,D}
+
 This project implements the Multiple Support Apriori (MSApriori) algorithm from scratch using Python, based on the given input and output specifications.
 
 <p>
