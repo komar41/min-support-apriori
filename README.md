@@ -44,7 +44,7 @@ Suppose we have the following MIS values:
 - MIS(D) = 20%
 - MIS(E) = 20%
 - SDC = 10%
-- 
+
 The algorithm would proceed as follows:<br>
 Count the support of each item:<br>
 A: 50%, B: 100%, C: 75%, D: 50%, E: 75%
