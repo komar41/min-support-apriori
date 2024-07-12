@@ -24,6 +24,42 @@ Transaction database:
 
 **Result:** Frequent itemsets {A}, {B}, {C}, {D}, {B,C}, {B,D}, {C,D}
 
+The MSApriori algorithm is an extension of the classic Apriori algorithm for association rule mining. It addresses a limitation of the original Apriori algorithm by allowing different minimum support thresholds for different items. This is particularly useful when dealing with datasets that contain both frequent and rare items of interest.
+
+**Key features of MSApriori:**<br>
+- Multiple Minimum Support (MIS): Each item can have its own minimum support threshold.
+- Support Difference Constraint (SDC): Ensures that the support values of items in a frequent itemset are not too different from each other.
+
+**Example:**<br>
+Let's consider a small transaction database:
+- Transaction 1: {A, B, C, D}
+- Transaction 2: {B, C, E}
+- Transaction 3: {A, B, C, E}
+- Transaction 4: {B, D, E}
+
+Suppose we have the following MIS values:
+- MIS(A) = 40%
+- MIS(B) = 20%
+- MIS(C) = 30%
+- MIS(D) = 20%
+- MIS(E) = 20%
+- SDC = 10%
+- 
+The algorithm would proceed as follows:<br>
+Count the support of each item:<br>
+A: 50%, B: 100%, C: 75%, D: 50%, E: 75%
+
+Generate frequent 1-itemsets based on their MIS values:<br>
+{B}, {C}, {D}, {E} (A is excluded as its support is below its MIS)
+
+Generate candidate 2-itemsets and check their support:<br>
+{B, C}, {B, D}, {B, E}, {C, D}, {C, E}, {D, E}
+
+Prune itemsets that don't meet the SDC constraint or individual MIS values.<br>
+Continue generating and pruning larger itemsets until no more frequent itemsets can be found.
+
+The final output would be the frequent itemsets that satisfy both the MIS and SDC constraints.
+
 This project implements the Multiple Support Apriori (MSApriori) algorithm from scratch using Python, based on the given input and output specifications.
 
 <p>
