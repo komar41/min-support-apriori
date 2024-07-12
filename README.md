@@ -3,6 +3,7 @@
 This project implements the Multiple Support Apriori (MSApriori) algorithm from scratch using Python, based on the given input and output specifications.
 
 ![image](https://github.com/user-attachments/assets/a6ce000a-6e8a-4e0a-b70c-bf61ca64243f)
+
 (image source: [Datacamp](https://www.datacamp.com/tutorial/market-basket-analysis-r))
 
 ## Input
