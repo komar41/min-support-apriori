@@ -76,3 +76,7 @@ Example output:
 ## References
 - R. Agrawal and R. Srikant. "Fast algorithms for mining association rules." In Proc. 1994 Int. Conf. Very Large Data Bases (VLDB'94), pages 487-499, Santiago, Chile, Sept. 1994.
 - B. Liu, W. Hsu, and Y. Ma. "Mining association rules with multiple minimum supports." In Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining, pages 337-341. ACM, 1999.
+
+## Team
+- Kazi Shahrukh Omar
+- Soham Pradhan
